@@ -53,19 +53,19 @@ This is a simple Flask application that manages users. It connects to a MySQL da
 
 Fork and clone the repository before performing the below steps:-
 
-1. Branching
-    Create a new branchfor each feature or a bug fix.
+1. Branching<br/>
+    Create a new branch for each feature or a bug fix.
     ```
     git checkout -b <branch-name>
     ```
-2. Commiting and Pushing Changes
+2. Commiting and Pushing Changes<br/>
     Commit changes with a descriptive message.
     ```
     git add .
     git commit -m "Your descriptive message"
     git push
     ```
-3. Creating a Pull Request
+3. Creating a Pull Request<br/>
     Go to the repository on Github and create a pull request from your branch to the main branch.
 
 ### Queries Used
