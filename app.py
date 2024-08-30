@@ -41,7 +41,7 @@ def user_detail(id):
     cursor.execute("SELECT * FROM users WHERE id = %s", (id,))
     user = cursor.fetchone()
     if user:
-        return render_template('user_detail.html', user=user)
+        return render_template('user_details.html', user=user)
     else:
         abort(404)
 
