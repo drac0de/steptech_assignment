@@ -36,5 +36,14 @@ def new_user():
         return redirect(url_for('users'))
     return render_template('new_user.html')
 
+@app.route('/users/<int:id>')
+def user_detail(id):
+    cursor.execute("SELECT * FROM users WHERE id = %s", (id,))
+    user = cursor.fetchone()
+    if user:
+        return render_template('user_detail.html', user=user)
+    else:
+        abort(404)
+
 if __name__ == '__main__':
     app.run(debug=True)
