@@ -37,7 +37,7 @@ def new_user():
     return render_template('new_user.html')
 
 @app.route('/users/<int:id>')
-def user_detail(id):
+def user_details(id):
     cursor.execute("SELECT * FROM users WHERE id = %s", (id,))
     user = cursor.fetchone()
     if user:
